@@ -1,4 +1,20 @@
 <footer>
+<hr id="footer-hr">
+<div id="footer-content-wrapper">
+  <div class="footer-content" style="text-align:left">
+    Borthwick Institute for Archives<br>
+    University of York, Heslington, York, YO10 5DD, UK <br>
+    Tel: 01904 321166 | <a href="mailto:borthwick-institute@york.ac.uk">borthwick-institute@york.ac.uk</a>
+  </div>
+  <div class="footer-content" style="text-align:center; vertical-align: middle">
+    <img src="//www.york.ac.uk/media/borthwick/images/BW_Pig_Transparent_textless.png" alt="Borthwick logo" title="Borthwick logo">
+  </div>
+  <div class="footer-content" style="text-align:right">
+    <a href="/harmful-language-statement">Harmful Language Statement</a><br>
+    <a href="//www.york.ac.uk/about/legal-statements/">Legal statements</a> | <a href="//www.york.ac.uk/borthwick/feedback/">Catalogue feedback</a><br>
+    University of York
+  </div>
+</div>
 
   <?php if (QubitAcl::check('userInterface', 'translate')) { ?>
     <?php echo get_component('sfTranslatePlugin', 'translate'); ?>
