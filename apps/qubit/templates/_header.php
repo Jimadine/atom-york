@@ -11,7 +11,7 @@
 <header id="top-bar">
 
   <?php if (sfConfig::get('app_toggleLogo')) { ?>
-    <?php echo link_to(image_tag('logo', ['alt' => 'AtoM']), '@homepage', ['id' => 'logo', 'rel' => 'home']); ?>
+    <?php echo link_to(image_tag('logo', ['alt' => 'University of York']), 'https://www.york.ac.uk/', ['id' => 'logo', 'rel' => 'home']); ?>
   <?php } ?>
 
   <?php if (sfConfig::get('app_toggleTitle')) { ?>
@@ -53,7 +53,7 @@
     <div class="container">
       <div class="row">
         <div class="span12">
-          <span><?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?></span>
+          <span><a href="https://www.york.ac.uk/borthwick/"><?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?></a></span>
         </div>
       </div>
     </div>
