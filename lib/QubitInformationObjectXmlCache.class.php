@@ -95,6 +95,7 @@ class QubitInformationObjectXmlCache
                 $io = QubitInformationObject::getById($row->id);
 
                 ++$exporting;
+                if (isset($options['skip']) && $exporting>1000) {exit("next");}
                 $this->logger->info($this->i18n->__('Exporting information object ID %1% (%2% of %3%)', ['%1%' => $io->id, '%2%' => $exporting, '%3%' => count($results)]));
                 $this->export($io, $format);
 
