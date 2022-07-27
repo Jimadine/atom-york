@@ -56,6 +56,12 @@
         </a>
       </div>
 
+      <div class="search-realm-advanced">
+        <a href="/index.php/are-you-looking-for-a-will">
+          <?php echo __('Are you looking for a will?'); ?>
+        </a>
+      </div>
+
     </div>
 
   </form>
