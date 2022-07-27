@@ -1,0 +1,22 @@
+#!/bin/bash
+# See https://groups.google.com/d/msg/ica-atom-users/MNs8ZxkLILc/mdTHKdn6DAAJ for details of this script
+# and https://www.accesstomemory.org/en/docs/2.4/admin-manual/maintenance/cli-tools/
+# Note also lib/QubitInformationObjectXmlCache.class.php needs to be modified
+# Timings bit from https://www.golinuxcloud.com/get-script-execution-time-command-bash-script/
+# Note the bc package is required to get the timings to work (Puppet should be configured to install bc)
+echo "Script started at $(date)"
+start=$(date +%s.%N)
+
+echo "Exporting"
+skip=0
+while [ $(cd /usr/share/nginx/atom && php symfony cache:xml-representations --skip="$skip" | tail -1) == "next" ]
+do
+(( skip+=1000 ))
+echo "$skip"
+done
+echo "Done"
+
+duration=$(echo "$(date +%s.%N) - $start" | bc)
+execution_time=$(printf "%.0f" $duration)
+echo "Script finished at $(date). Script execution time: $execution_time seconds ($(($execution_time/3600))h:$(($execution_time%3600/60))m:$(($execution_time%60))s)."
+echo "--"
