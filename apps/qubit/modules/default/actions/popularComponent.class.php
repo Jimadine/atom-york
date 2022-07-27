@@ -22,6 +22,22 @@
  */
 class DefaultPopularComponent extends sfComponent
 {
+    private function getNewestAdditions()
+    {
+      $sql = '
+        SELECT o.id FROM object o LEFT JOIN status s ON o.id = s.object_id
+        LEFT JOIN information_object io ON o.id = io.id
+        WHERE o.class_name = "QubitInformationObject"
+        AND o.id != ?
+        AND s.status_id != ?
+        AND io.parent_id = ?
+        ORDER BY created_at DESC LIMIT 10
+      ';
+      $rows = QubitPdo::fetchAll($sql, array(QubitInformationObject::ROOT_ID, QubitTerm::PUBLICATION_STATUS_DRAFT_ID,
+                                 QubitInformationObject::ROOT_ID));
+      return array_map(function($x) { return $x->id; }, $rows);
+
+    }
     public function execute($request)
     {
         $this->popularThisWeek = QubitAccessLog::getPopularThisWeek(
