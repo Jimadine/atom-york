@@ -1,0 +1,4 @@
+[submodule "plugins/arBorthwickPlugin"]
+	path = plugins/arBorthwickPlugin
+	url = https://github.com/digital-york/Borthwick-Catalogue-CSS-theme.git
+	branch = 2.7
