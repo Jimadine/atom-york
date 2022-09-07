@@ -62,6 +62,12 @@
         </a>
       </div>
 
+      <div class="search-realm-advanced">
+        <a href="/index.php/are-you-looking-for-parish-registers">
+          <?php echo __('Are you looking for parish registers?') ?>
+        </a>
+      </div>
+
     </div>
 
   </form>
