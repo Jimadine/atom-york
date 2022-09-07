@@ -10,7 +10,7 @@
     <img src="//www.york.ac.uk/media/borthwick/images/BW_Pig_Transparent_textless.png" alt="Borthwick logo" title="Borthwick logo">
   </div>
   <div class="footer-content" style="text-align:right">
-    <a href="/harmful-language-statement">Harmful Language Statement</a><br>
+    <a href="/accessibility">Accessibility</a> | <a href="/harmful-language-statement">Harmful Language Statement</a><br>
     <a href="//www.york.ac.uk/about/legal-statements/">Legal statements</a> | <a href="//www.york.ac.uk/borthwick/feedback/">Catalogue feedback</a><br>
     University of York
   </div>
@@ -28,7 +28,7 @@
 
   <div id="js-i18n">
     <div id="read-more-less-links"
-      data-read-more-text="<?php echo __('Read more'); ?>" 
+      data-read-more-text="<?php echo __('Read more'); ?>"
       data-read-less-text="<?php echo __('Read less'); ?>">
     </div>
   </div>
