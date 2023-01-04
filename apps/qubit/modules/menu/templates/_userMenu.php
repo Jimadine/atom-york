@@ -3,7 +3,7 @@
   <div id="user-menu">
     <button class="top-item top-dropdown" data-toggle="dropdown" data-target="#"
       aria-expanded="false">
-        <?php echo $menuLabels['Admin Login']; ?>
+        <?php echo $menuLabels['login']; ?>
     </button>
 
     <div class="top-dropdown-container">
@@ -26,7 +26,7 @@
 
           <?php echo $form->password->renderRow(['autocomplete' => 'off']); ?>
 
-          <button type="submit"><?php echo $menuLabels['Log in']; ?></button>
+          <button type="submit"><?php echo $menuLabels['login']; ?></button>
 
         </form>
 
@@ -59,9 +59,9 @@
       <div class="top-dropdown-body">
 
         <ul>
-          <li><?php echo link_to($menuLabels['Profile'], [
+          <li><?php echo link_to($menuLabels['myProfile'], [
               $sf_user->user, 'module' => 'user', ]); ?></li>
-          <li><?php echo link_to($menuLabels['Log out'], [
+          <li><?php echo link_to($menuLabels['logout'], [
               'module' => 'user', 'action' => 'logout', ]); ?></li>
         </ul>
 
