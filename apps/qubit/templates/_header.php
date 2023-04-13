@@ -58,4 +58,7 @@
       </div>
     </div>
   </div>
+  <div id="orange-link-box">
+    <div>&nbsp;</div>
+  </div>
 <?php } ?>
