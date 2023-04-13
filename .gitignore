@@ -29,6 +29,8 @@
 # Composer and NPM dependencies
 /vendor/composer/
 node_modules
+composer.phar
+install_composer
 
 # Webpack assets
 dist
