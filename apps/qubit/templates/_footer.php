@@ -11,7 +11,7 @@
   </div>
   <div class="footer-content" style="text-align:right">
     <a href="/accessibility">Accessibility</a> | <a href="/harmful-language-statement">Harmful Language Statement</a><br>
-    <a href="//www.york.ac.uk/about/legal-statements/">Legal statements</a> | <a href="//www.york.ac.uk/borthwick/feedback/">Catalogue feedback</a><br>
+    <a href="//www.york.ac.uk/about/legal-statements/">Legal statements</a> | <a href="//www.york.ac.uk/borthwick/contact/">Catalogue feedback</a><br>
     University of York
   </div>
 </div>
