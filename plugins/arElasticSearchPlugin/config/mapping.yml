@@ -545,6 +545,7 @@ mapping:
         _i18nFields: [authorizedFormOfName, history]
         dynamic: strict
         properties:
+          i18n: { type: object, dynamic: true, include_in_all: false }
           id: { type: integer }
         _foreign_types:
           other_names: other_name
