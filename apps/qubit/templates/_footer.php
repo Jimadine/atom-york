@@ -7,7 +7,7 @@
     Tel: 01904 321166 | <a href="mailto:borthwick-institute@york.ac.uk">borthwick-institute@york.ac.uk</a>
   </div>
   <div class="footer-content" style="text-align:center; vertical-align: middle">
-    <img src="//www.york.ac.uk/media/borthwick/images/BW_Pig_Transparent_textless.png" alt="Borthwick logo" title="Borthwick logo">
+    <img src="/plugins/arBorthwickPlugin/images/Borthwick_Crest-RGB.png" alt="Borthwick logo" title="Borthwick logo">
   </div>
   <div class="footer-content" style="text-align:right">
     <a href="/accessibility">Accessibility</a> | <a href="/harmful-language-statement">Harmful Language Statement</a><br>
