@@ -9,7 +9,8 @@ start=$(date +%s.%N)
 
 echo "Exporting"
 skip=0
-while [ $(cd /usr/share/nginx/atom && php symfony cache:xml-representations --skip="$skip" | tail -1) == "next" ]
+cd /usr/share/nginx/atom || exit $?
+while [ "$(php symfony cache:xml-representations --skip="$skip" | tail -1)" == "next" ]
 do
 (( skip+=1000 ))
 echo "$skip"
